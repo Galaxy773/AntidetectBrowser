@@ -1,5 +1,5 @@
 (browserType, fakeHeap) => {
-    if (Performance !== 'undefined') {
+    if (typeof Performance !== 'undefined') {
         //todo: проверить
         let _Object = utils.cache.Object;
         const _Reflect = utils.cache.Reflect;
