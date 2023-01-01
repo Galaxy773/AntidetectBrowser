@@ -13,28 +13,28 @@
         })
     }
 
-    if (fakeSensor.ReplaceGyroscope && Gyroscope !== 'undefined') {
+    if (fakeSensor.ReplaceGyroscope && typeof Gyroscope !== 'undefined') {
         defineProp(Gyroscope.prototype, 'x', 'GyroscopeX');
         defineProp(Gyroscope.prototype, 'y', 'GyroscopeY');
         defineProp(Gyroscope.prototype, 'z', 'GyroscopeZ');
     }
 
-    if (fakeSensor.ReplaceGravity && GravitySensor !== 'undefined') {
+    if (fakeSensor.ReplaceGravity && typeof GravitySensor !== 'undefined') {
         defineProp(GravitySensor.prototype, 'x', 'GravityX');
         defineProp(GravitySensor.prototype, 'y', 'GravityY');
         defineProp(GravitySensor.prototype, 'z', 'GravityZ');
     }
 
-    if (fakeSensor.ReplaceAccelerometer && Accelerometer !== 'undefined') {
+    if (fakeSensor.ReplaceAccelerometer && typeof Accelerometer !== 'undefined') {
         defineProp(Accelerometer.prototype, 'x', 'AccelerometerX');
         defineProp(Accelerometer.prototype, 'y', 'AccelerometerY');
         defineProp(Accelerometer.prototype, 'z', 'AccelerometerZ');
     }
 
-    if (fakeSensor.ReplaceLinearAcceleration && LinearAcceleration !== 'undefined') {
-        defineProp(LinearAcceleration.prototype, 'x', 'LinearAccelerationX');
-        defineProp(LinearAcceleration.prototype, 'y', 'LinearAccelerationY');
-        defineProp(LinearAcceleration.prototype, 'z', 'LinearAccelerationZ');
+    if (fakeSensor.ReplaceLinearAcceleration && typeof LinearAccelerationSensor !== 'undefined') {
+        defineProp(LinearAccelerationSensor.prototype, 'x', 'LinearAccelerationX');
+        defineProp(LinearAccelerationSensor.prototype, 'y', 'LinearAccelerationY');
+        defineProp(LinearAccelerationSensor.prototype, 'z', 'LinearAccelerationZ');
     }
 
     //todo: quaternion
