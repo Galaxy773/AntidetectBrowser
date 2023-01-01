@@ -1,5 +1,5 @@
 (realOffset) => {
-    if (Performance !== 'undefined') {
+    if (typeof Performance !== 'undefined') {
         const _Reflect = utils.cache.Reflect;
 
         const offset = -realOffset - new Date().getTimezoneOffset();
